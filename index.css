@@ -98,6 +98,7 @@ a:active {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
+  pointer-events: none; /* Makes browser ignore "click events */
 }
 
 /* Portfolio section video */
@@ -110,6 +111,7 @@ a:active {
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: -1;
+  pointer-events: none; /* Makes browser ignore "click events */
 }
 
 .content, .portfolio {
