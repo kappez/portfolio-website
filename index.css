@@ -8,6 +8,28 @@ h1 {
   font-family: "Roboto Black";
   text-transform: uppercase;
 }
+.title span:after{
+  content: "Welcome!";
+  animation: words 6s infinite;
+}
+
+@keyframes words {
+  0%, 33% {
+    content: "Welcome!";
+    color: #ff70a6;
+  }
+
+    34%, 66% {
+    content: "Välkommen!";
+    color: #ff9770;
+  }
+
+    67%, 100% {
+    content: "Tervetuloa!";
+    color: #ffd670;
+  }
+  
+}
 
 h2 {
   color: #70d6ff;
