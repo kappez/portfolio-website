@@ -78,10 +78,11 @@ p {
 .aboutbox {
   padding: 1%;
   flex: 1; 
-  background-color: #FFFFFF20;
+  background-color: #00000090;
   height: 80%;
   border-radius: 20px;
   margin: 5% 10%;
+  backdrop-filter: blur(8px);
 }
 
 .aboutleft {
@@ -93,6 +94,7 @@ p {
   align-items: center;
   text-align: center;
   overflow: hidden;
+  background-image: url("https://images.wallpapersden.com/image/download/small-memory_am1pa2aUmZqaraWkpJRmbmdlrWZlbWU.jpg");
 }
 
 .aboutright {
@@ -175,6 +177,7 @@ a:active {
   transform: translate(-50%, -50%);
   z-index: -1;
   pointer-events: none; /* Makes browser ignore "click events */
+
 }
 
 /* Portfolio section video */
