@@ -70,13 +70,22 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: #e9ff70;
+  background-color: #000000;
   height: 100vh;
   width: 100%;
 }
 
+.aboutbox {
+  padding: 1%;
+  flex: 1; 
+  background-color: #FFFFFF20;
+  height: 80%;
+  border-radius: 20px;
+  margin: 5% 10%;
+}
+
 .aboutleft {
-  width: 80%;
+  width: 100%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -84,7 +93,6 @@ p {
   align-items: center;
   text-align: center;
   overflow: hidden;
-  margin: 10%;
 }
 
 .aboutright {
@@ -96,6 +104,7 @@ p {
   align-items: center;
   overflow: hidden;
   background-color: #000000;
+  border-top: 20px #FFF;
 }
 
 .portfolio {
