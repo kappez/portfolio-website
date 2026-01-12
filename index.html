@@ -3,9 +3,9 @@
 <head>
   <link rel="stylesheet" href="index.css">
 </head>
-<body onload="javascript:changeText('esport')">
+<body onload="javascript:changeText('esport'), showArticles(getArticles(null));">
 <div class="topmenu" id="start">
-<p><a href="#start">Start</a> | <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#articles">Articles</a></p>
+<p><a href="#start">Start</a> | <a href="#about">About</a> | <a href="#portfolio">Portfolio</a> | <a href="#categories">Articles</a></p>
 </div>
 
 <div class="content">
@@ -37,16 +37,40 @@
     <iframe width="420" height="235" style="border:5px solid #70d6ff" src="https://www.youtube.com/embed/nX6cWacjLZE"></iframe>
   </div>
 
-  <h1>Sådär det var hela hemsidan..</h1>
-  <h3>Skoja bara, här kommer lite artiklar</h3>
-  <div class="articles" id="articles">
-    <a href="article.html?id=article-1">Min första artikel ⇒</a>
-      <hr>
-    <a href="article.html?id=article-2">Min andra artikel ⇒</a>
-      <hr>
-    <a href="article.html?id=article-3">Min tredje artikel ⇒</a>
-      <hr>
-  </div>
+  <div class="articles" id="categories"></div>
+   <h3>Here are some articles</h3>
+    <ul id="articlelist"></ul>
+    
+    <script src="categories.js"></script>
+    <script src="articles.js"></script>
+    <script>
+
+      const container = document.getElementById("categories");
+
+      // Skapa knappen "Alla"
+      const allBtn = document.createElement("button");
+      allBtn.textContent = "All";
+      allBtn.addEventListener("click", () => {
+        showArticles(getArticles(null)); // null fetches all articles
+      });
+      container.appendChild(allBtn);
+
+      // Skapa knappar för varje kategori
+      CATEGORIES.forEach(category => {
+        const btn = document.createElement("button");
+        btn.textContent = category;
+        
+        // Vad ska hända när man klickar på knappen?
+        // Skriv kod som filtrerar artiklarna på den här kategorin
+        btn.addEventListener("click", () => {
+          showArticles(getArticles(category));
+        });
+        container.appendChild(btn);
+      });
+    </script>
+
+
+
 </div>
 
 <div class="footer"><p>Website created by me, Daniel</p></div>
