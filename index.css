@@ -120,6 +120,11 @@ p {
   width: 100%;
 }
 
+.articles {
+  width: 25%;
+  margin-bottom: 5%;
+}
+
 .portfolioVideos {
   margin-top: 5%;
   display: flex;

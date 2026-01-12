@@ -1,0 +1,108 @@
+body {
+  background-color: #000000;
+}
+
+h1 {
+  color: #ffffff;
+
+  font-family: "Roboto Black";
+  text-transform: uppercase;
+}
+
+h2 {
+  color: #70d6ff;
+  font-size: 5vw;
+  font-family: "Roboto Black";
+  text-decoration: underline;
+}
+
+p {
+  color: #ffffff;
+  font-family: "Roboto";
+}
+
+.topmenu {
+  color: rgb(255, 255, 255);
+  text-align: left;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 5%;
+  padding-top: 1%;
+  padding-left: 5%;
+  z-index: 1; /* Ensures topmenu is "over" background video with index -1 */
+}
+
+.headercontainer {
+  position: relative;
+  text-align: center;
+}
+
+.headertext {
+  background-color: #70d6ff;
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.articletext {
+  margin: auto;
+  text-align: justify;
+  width: 70%;
+  margin-top: 2%;
+  margin-bottom: 5%;
+}
+
+.articleinfo {
+  font-family: "Roboto";
+  color: #5c5c5c;
+  margin: auto;
+  text-align: right;
+}
+
+.headerimage {
+  display: block;
+  width: 100%;
+  height: 50vh;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  background-color: #70d6ff;
+  color: #000000;
+  text-align: center;
+  /*padding-top: 0%; Not used for now */
+  z-index: 1; /* Ensures footer is "over" background video with index -1 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a:visited {
+  text-decoration: none;
+    color: #ffffff;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #a7a7a7;
+}
+
+a:active {
+  text-decoration: none;
+  color: #ffffff;
+}
+
